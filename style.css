@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  block-size: border-box;
+}
+body * {
+  font-family: "Inter", sans-serif;
+  color: var(--text-color);
+}
+
+.switch {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 34px;
+  left: 40%;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.dark-mode .slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+
+  background: url(./assets/MoonStars.png) no-repeat top center/cover;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #494b4b;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #494b4b;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.dark-mode {
+  background: url(./assets/bg-mobile.jpg) no-repeat top center/cover;
+}
+
+.dark-mode #container {
+  width: 360px;
+  margin: 56px auto 0px;
+  padding: 0 24px;
+}
+.dark-mode #profile {
+  text-align: center;
+  padding: 24px;
+}
+.dark-mode #profile img {
+  width: 126px;
+  border-style: solid;
+  border-radius: 200px;
+  border-width: 1px;
+  border-color: beige;
+}
+
+.dark-mode #profile p {
+  font-style: normal;
+  font-weight: 500;
+  margin-top: 8px;
+}
+/*Links*/
+.dark-mode ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.dark-mode ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: beige;
+  padding: 16px 24px;
+
+  background: rgb(255, 255, 255, 0.1);
+  border: 1px solid rgb(255, 255, 255, 0.5);
+  border-radius: 8px;
+  backdrop-filter: blur(4px);
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+/*pseudo-selecto*/
+.dark-mode ul li a:hover {
+  background: rgb(255, 255, 255, 0.05);
+  border: 1px solid;
+}
+.dark-mode #logoinst {
+  color: beige;
+  margin-top: 1%;
+  margin-bottom: 0%;
+  margin-right: 2%;
+}
+.dark-mode #logolin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: beige;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-right: 2%;
+}
+.dark-mode #logoins {
+  color: beige;
+  padding-top: 2%;
+}
+.dark-mode #logogit {
+  color: beige;
+  margin-top: 0%;
+  margin-bottom: 1%;
+  margin-right: 2%;
+}
+
+.dark-mode #myhistory {
+  color: beige;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-right: 0%;
+}
+
+/*lado branco----------------------------------------------------------------*/
+.ligth-mode {
+  background: url(./assets/bg-mobile-light.jpg) no-repeat top center/cover;
+}
+.ligth-mode .slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background: url(./assets/Sun.png) no-repeat top center/cover;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.ligth-mode #container {
+  width: 360px;
+
+  margin: 56px auto 0px;
+  padding: 0 24px;
+}
+.ligth-mode #profile {
+  text-align: center;
+
+  padding: 24px;
+}
+.ligth-mode #profile img {
+  width: 126px;
+  height: 126px;
+  border-style: solid;
+  border-radius: 200px;
+  border-width: 1px;
+  border-color: black;
+}
+
+.ligth-mode #profile p {
+  font-style: normal;
+  font-weight: 500;
+  margin-top: 8px;
+}
+
+.ligth-mode ul {
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ligth-mode ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  padding: 16px 24px;
+
+  background: rgb(255, 255, 255, 0.1);
+  border: 1px solid rgba(8, 6, 6, 0);
+  border-radius: 8px;
+  border-color: black;
+  backdrop-filter: blur(4px);
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.ligth-mode ul li a:hover {
+  background: rgb(255, 255, 255, 0.1);
+  border: 1px solid rgba(8, 6, 6, 0);
+  border-color: rgb(175, 173, 173);
+}
+.ligth-mode #logoinst {
+  color: black;
+  margin-top: 1%;
+  margin-bottom: 0%;
+  margin-right: 2%;
+}
+.ligth-mode #logolin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-right: 2%;
+}
+.ligth-mode #logoins {
+  color: black;
+  padding-top: 2%;
+}
+.ligth-mode #logogit {
+  color: black;
+  margin-top: 0%;
+  margin-bottom: 1%;
+  margin-right: 2%;
+}
+
+.ligth-mode #myhistory {
+  color: black;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-right: 0%;
+}
+.ligth-mode #myhistory a {
+  padding-left: 1%;
+}
