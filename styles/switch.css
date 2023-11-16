@@ -33,7 +33,7 @@
   left: 4px;
   bottom: 4px;
 
-  background: url(./assets/MoonStars.png) no-repeat top center/cover;
+  background: url(../assets/MoonStars.png) no-repeat top center/cover;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -61,10 +61,10 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 .dark-mode {
-  background: url(./assets/bg-mobile.jpg) no-repeat top center/cover;
+  background: url(../assets/bg-mobile.jpg) no-repeat top center/cover;
 }
 .ligth-mode {
-  background: url(./assets/bg-mobile-light.jpg) no-repeat top center/cover;
+  background: url(../assets/bg-mobile-light.jpg) no-repeat top center/cover;
 }
 .ligth-mode .slider:before {
   position: absolute;
@@ -73,7 +73,7 @@ input:checked + .slider:before {
   width: 26px;
   left: 4px;
   bottom: 4px;
-  background: url(./assets/Sun.png) no-repeat top center/cover;
+  background: url(../assets/Sun.png) no-repeat top center/cover;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }

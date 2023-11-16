@@ -83,8 +83,6 @@ ion-icon {
   margin-right: 2%;
 }
 
-/*@media (min-width: 600px) {
-  #container {
-  }
+#myhistory a {
+  transform: scale(3.5);
 }
-*/
