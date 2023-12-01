@@ -1,4 +1,4 @@
-<h1 align="center"> DevLinks </h1>
+<h1 align="center"> LinkMe </h1>
 
 <p align="center">
 Projeto feito em conjunto a rocketseat, porem com algumas alteraçoes<br/>
